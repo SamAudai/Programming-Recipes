@@ -1,0 +1,71 @@
+<script language="JavaScript">
+<!-- Copyright 2001, Sandeep Gangadharan (sivam@bol.net.in) -->
+<!-- For more free scripts go to http://web1.mtnl.net.in/~sivam/ -->
+
+<!--
+function findinfo() {  
+        document.write("<li><b>Browser:</b> " + navigator.appName);
+        document.write("<li><b>Version:</b> " + navigator.appVersion);
+        document.write("<li><b>User Agent:</b> " + navigator.userAgent);
+
+         if (navigator.javaEnabled()) {
+         Java = " Enabled"; }
+         else Java = " Not Enabled";
+        document.write("<li><b>Java:</b> " + (Java));
+
+        document.write("<li><b>Language:</b> " + navigator.language);
+        document.write("<li><b>History Length:</b> " + history.length);
+
+         Platform="Not Known";
+         if (navigator.platform.indexOf('Win') != -1) {
+         if (navigator.appVersion.indexOf('95') != -1) Platform="Windows95";
+         else if (navigator.appVersion.indexOf('98') != -1) Platform="Windows98";
+         else if (navigator.appVersion.indexOf('00') != -1) Platform="Windows2000";
+         else Platform="Windows3.1/NT"; }
+         if (navigator.platform.indexOf('Mac') != -1) Platform="Macintosh";
+         if (navigator.platform.indexOf('UNI') != -1) Platform="UNIX";
+         if (navigator.appVersion.indexOf('Lin') != -1) Platform="Linux";
+         if (navigator.appVersion.indexOf('Sun') != -1) Platform="SunOS";
+	document.write("<li><b>Operating System:</b> " + (Platform));
+
+	document.write("<li><b>Current Resolution:</b> " + (window.screen.width+" X " + window.screen.height));
+	document.write("<li><b>Maximum Resolution:</b> " + (window.screen.availWidth + " X " + window.screen.availHeight));
+        document.write("<li><b>Colour Depth:</b> " + window.screen.colorDepth + " bit");
+
+         num1 = ((parseInt(window.screen.colorDepth)) * (parseInt(window.screen.colorDepth)));
+         num = num1 * num1;            
+        document.write("<li><b>Colours:</b> " + (num));
+
+        if (navigator.appName.indexOf("Netscape")!= -1) {
+          document.write("<form><select><option>Click to see the various installed Plug-ins");
+        for (i=0; i<navigator.plugins.length; i++) {
+          document.write("<option>");
+          document.write(i+1);
+          document.write(". "+navigator.plugins[i].name);
+          document.write("</option>"); }
+          document.write("</option></select></form>");
+
+          document.write("<form><select><option>Click to see the various installed MIME-types");
+        for (i=0; i<navigator.mimeTypes.length; i++) {
+          document.write("<option>");
+          document.write(i+1);
+          document.write(". "+navigator.mimeTypes[i].description);
+          document.write("</option>"); }
+          document.write("</option></select></form>"); }
+}
+
+//-->
+
+</script>
+
+</head>
+
+<!-- This goes into the BODY of the file -->
+
+
+<font size="2" face="verdana, arial, helvetica, sans serif">
+<b>USER DETAILS</b>
+<script>
+	findinfo();
+</script>
+</font>

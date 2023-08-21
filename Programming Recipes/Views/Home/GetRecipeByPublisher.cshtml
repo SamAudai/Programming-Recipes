@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Programming_Recipes.Models.DownloadRecipe>
+
+@{
+    ViewBag.Title = "الوصفات المنشورة";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>الوصفات المنشورة من قبلكم</h2>
+
+<table class="table table-stripped table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.recipe.RecipeTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.user.UserName)
+            
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DownloadDate)
+        </th>
+       
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.recipe.RecipeTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.user.UserName)
+            
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DownloadDate)
+        </td>
+       
+    </tr>
+}
+
+</table>

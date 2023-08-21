@@ -1,0 +1,26 @@
+<center>
+  <table border="1" cellspacing="0" bordercolordark="#0000FF">
+    <tr>
+      <td align="center" bgcolor="#3366CC">
+ <FORM ACTION="http://www.ayna.com/cgi-bin/anathra.cgi" method="post">
+  <TABLE bgcolor="#3366CC" bordercolor="#0000FF" bordercolordark="#6666FF" bordercolorlight="#3366CC">
+   <TR>
+    <TD width="0">
+    <b><a href="http://www.ayna.com" target="_blank"><font size="3" color="#FFFFFF">AYNA</font></a></b>
+    </TD>
+    <TD bgcolor="#FFFFFF" bordercolorlight="#0000FF" bordercolordark="#3366CC">
+     <INPUT TYPE="text" SIZE="30" NAME="search" style="background-color: #99CCFF; color: #FF0000; border-style: inset">
+     <INPUT TYPE="hidden" NAME="boolean" VALUE="AND">
+     <INPUT TYPE="hidden" NAME="show" VALUE="1">
+     <INPUT TYPE="hidden" NAME="codepage" VALUE="cp1256">
+    </TD>
+    <TD>
+     <b><a href="http://www.ayna.com/cgi-bin/anathra.cgi" target="_blank"><font face="Arial" size="3" color="#FFFFFF">≈»ÕÀ</font></a></b>
+    </TD>
+   </TR>
+  </TABLE>
+  </FORM>
+      </td>
+    </tr>
+  </table>
+  </center>

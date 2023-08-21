@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "تحميل الوصفات";
+}
+
+<h2>تحميل الأكواد البرمجية</h2>
+
+
+@model List<string>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+       
+        <table class="table table-stripped table-bordered table-hover">
+            <tr>
+                <th>إسم الملف</th>
+                <th>الرابط</th>
+            </tr>
+            @for (var i = 0; i <= Model.Count - 1; i++)
+            {
+                <tr>
+                    <td>@Model[i].ToString() </td>
+                    <td>@Html.ActionLink("تحميل", "Download", new { ImageName = @Model[i].ToString() }) </td>
+                </tr>
+            }
+        </table>
+
+        
+    </div>
+}
+
+<div>
+    @Html.ActionLink("العودة إلى الرئيسية", "Index")
+</div>

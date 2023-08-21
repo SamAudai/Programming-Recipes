@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Programming_Recipes.Models.Recipe>
+
+@{
+    ViewBag.Title = "قائمة الوصفات";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>قائمة الوصفات</h2>
+
+<p>
+    @Html.ActionLink("إضافة وصفة جديدة", "Create")
+</p>
+<table class="table table-stripped table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Language.LanguageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecipeTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecipeContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecipeFile)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Language.LanguageName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecipeTitle)
+        </td>
+        <td>
+            @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => item.RecipeContent).ToString()))
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecipeFile)
+        </td>
+        <td>
+            @Html.ActionLink("تعديل", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("تفاصيل", "Details", new { id=item.Id }) |
+            @Html.ActionLink("حذف", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

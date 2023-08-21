@@ -1,0 +1,53 @@
+﻿@model Programming_Recipes.Models.Recipe
+
+@{
+    ViewBag.Title = "تفاصيل وصفة برمجية";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>تفاصيل وصفة برمجية</h2>
+
+<div>
+    <h4>تفاصيل الوصفة</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Language.LanguageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Language.LanguageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipeTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeContent)
+        </dt>
+
+        <dd>
+            @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model=>model.RecipeContent).ToString()))
+           
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeFile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipeFile)
+
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("العودة إلى قائمة الوصفات", "Index")
+</p>

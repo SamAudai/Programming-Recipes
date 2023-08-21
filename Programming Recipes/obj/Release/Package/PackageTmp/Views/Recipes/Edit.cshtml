@@ -1,0 +1,114 @@
+﻿@model Programming_Recipes.Models.Recipe
+
+@{
+    ViewBag.Title = "تعديل وصفة برمجية";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>تعديل وصفة برمجية</h2>
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
+
+@using (Html.BeginForm("Edit", "Recipes", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="alert alert-danger" id="error-div" style="display:none">
+            <span id="view-err">
+
+            </span>
+        </div>
+
+        <h4>تعديل الوصفة</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.RecipeFile)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RecipeTitle, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.RecipeTitle, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.RecipeTitle, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RecipeContent, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.RecipeContent, new { htmlAttributes = new { @class = "form-control" }, @id = "RecipeContent" })
+                @Html.ValidationMessageFor(model => model.RecipeContent, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RecipeFile, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="upload" id="recipefile" />
+                @Html.ValidationMessageFor(model => model.RecipeFile, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LanguageId, "لغة البرمجة", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("LanguageId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.LanguageId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-default" id="save" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("العودة إلى قائمة الوصفات", "Index")
+</div>
+
+@section scripts{
+
+    <script>
+        $(function () {
+            $("#add").click(function () {
+
+                ////check if the input empty
+                //if ($("#recipefile").val() == "") {
+                //    $("#error-div").fadeIn();
+                //    $("#view-err").append("الرجاء إختيار ملف");
+                //    return false;
+                //}
+
+                if ($("#recipefile").val() != "") {
+
+                    //check if the file extention is valid
+                    var filename = document.getElementById("recipefile").value;
+                    var extentionfile = filename.substr(filename.lastIndexOf('.') + 1);//tiger.txt====>txt
+                    var validExtention = ['txt', 'docx', 'pdf', 'pptx'];
+                    if ($.inArray(extentionfile, validExtention) == -1) { //don't found file
+                        $("#error-div").fadeIn();
+                        $("#view-err").append("الرجاء إختيار ملف بإمتداد صحيح!");
+                        return false;
+                    }
+
+                    //check if the file size is valid (2 MB)
+                    var filesize = document.getElementById("recipefile").files[0].size / 1024 / 1024;
+                    if (filesize > 2) {
+                        $("#error-div").fadeIn();
+                        $("#view-err").append("الرجاء إختيار حجم ملف أقل من 2 ميغا بايت!");
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        CKEDITOR.replace("RecipeContent");
+    </script>
+
+}
+

@@ -1,0 +1,53 @@
+﻿@model Programming_Recipes.Models.Recipe
+
+@{
+    ViewBag.Title = "تفاصيل الوصفة";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>تفاصيل الوصفة</h2>
+
+<div>
+  
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Language.LanguageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Language.LanguageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipeTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeContent)
+        </dt>
+
+        <dd>
+            @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => model.RecipeContent).ToString()))
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeFile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipeFile)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تحميل الأكواد", "Downloads", new { id = Model.Id }) 
+    <br />
+    @Html.ActionLink("العودة إلى الرئيسية", "Index")
+
+</p>

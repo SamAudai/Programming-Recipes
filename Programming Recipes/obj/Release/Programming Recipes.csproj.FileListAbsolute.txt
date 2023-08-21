@@ -1,0 +1,58 @@
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Programming Recipes.dll.config
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Programming Recipes.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Programming Recipes.pdb
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Antlr3.Runtime.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\EntityFramework.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\EntityFramework.SqlServer.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.AspNet.Identity.Core.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Security.Cookies.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Security.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Security.Google.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Security.OAuth.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Web.Infrastructure.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Newtonsoft.Json.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Owin.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.Helpers.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.Mvc.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.Optimization.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.Razor.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.WebPages.Deployment.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.WebPages.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.WebPages.Razor.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\WebGrease.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Antlr3.Runtime.pdb
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\EntityFramework.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\EntityFramework.SqlServer.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.AspNet.Identity.Core.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Security.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Security.Cookies.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Security.Google.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Microsoft.Owin.Security.OAuth.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Newtonsoft.Json.pdb
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\Newtonsoft.Json.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.Helpers.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.Mvc.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.Optimization.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.Razor.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.WebPages.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.WebPages.Deployment.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\bin\System.Web.WebPages.Razor.xml
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming_Recipes.Migrations.InitialCreate.resources
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming_Recipes.Migrations.AddColumnToUser.resources
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming_Recipes.Migrations.AddLaguageTable.resources
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming_Recipes.Migrations.AddRecipesTable.resources
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming_Recipes.Migrations.DownloadRecipe.resources
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming_Recipes.Migrations.EditRecipeModel.resources
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming Recipes.csproj.GenerateResource.cache
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming Recipes.csproj.CoreCompileInputs.cache
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming Recipes.csproj.CopyComplete
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming Recipes.dll
+E:\الجامعة الإفتراضية السورية\(4) السنة الرابعة\S18 مواد الفصل\Project1 (PR1)\مشروع الوصفات البرمجية\Programming Recipes\Programming Recipes\obj\Release\Programming Recipes.pdb

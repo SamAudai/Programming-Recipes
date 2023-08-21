@@ -1,0 +1,216 @@
+using drapweb.Models;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.IO;
+using System.Web.UI.WebControls;
+using System.Web.UI;
+using System.ComponentModel.DataAnnotations;
+
+
+namespace drapweb.Controllers
+{     
+
+    public class HomeController : Controller
+    {
+        drapEntities DE = new drapEntities();      
+       //int result = 0;
+
+
+        public ActionResult Index()
+        {
+            return View(DE.Docs);
+        }
+
+        public ActionResult Registration()
+        {
+            var data = from docs in DE.Docs select docs;
+            return View(data);
+        }
+
+        [HttpPost]
+        public ActionResult Registration(Doc doc)
+        {
+            var viewbag = DE.Docs.ToList();
+            ViewBag.DocData = viewbag;
+            return View();
+        }
+
+        public ActionResult RegistrationAdminPanel()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult FileUpload(Doc doc, HttpPostedFileBase file)
+        {
+            try
+            {
+                DE.Docs.Add(doc);
+                JsonResult result = new JsonResult();
+
+                if (file.ContentLength <= 4000000)
+                {
+                    var fileName = Path.GetFileName(file.FileName);
+                    var path = Path.Combine(Server.MapPath("~/docs/"), fileName);
+                    file.SaveAs(path);
+                    doc.attachment = Path.Combine(Server.MapPath("~/docs/") +fileName);
+                    DE.SaveChanges();
+
+                }
+                ViewBag.Message = "Upload successful";
+                return RedirectToAction("Registration");
+
+            }
+            catch
+            {
+                ViewBag.Message = "Upload failed";
+                return RedirectToAction("Registration");
+            }
+        }
+
+
+        public ActionResult Deletereg()
+        {
+            var data = from docs in DE.Docs select docs;
+            return View(data);
+        }
+        //[HttpPost]
+        public ActionResult Deletereg_1(int id)
+        {
+            using (drapEntities DE = new drapEntities())
+            {
+                Doc doc = (from c in DE.Docs
+                           where c.id == id
+                           select c).FirstOrDefault();
+                DE.Docs.Remove(doc);
+                DE.SaveChanges();
+            }
+            return new EmptyResult();
+        }
+        public ActionResult Downloads()
+        {
+           // drapEntities DE = new drapEntities();
+            var dir = new System.IO.DirectoryInfo(Server.MapPath("~/docs/"));
+            System.IO.FileInfo[] fileNames = dir.GetFiles("*.*"); 
+            List<string> items = new List<string>();
+            foreach (var file in fileNames)
+            {
+                items.Add(file.Name);
+            }
+            return View(items);
+        }
+
+        public FileResult Download(string ImageName)
+        {
+            
+            var FileVirtualPath = "~/docs/" + ImageName;
+            return File(FileVirtualPath, "application/force-download", Path.GetFileName(FileVirtualPath));
+        }
+
+        //public ActionResult Downloads()
+        //{
+        //    var dir = new System.IO.DirectoryInfo(Server.MapPath("~/docs/"));
+        //    System.IO.FileInfo[] fileNames = dir.GetFiles("*.*"); 
+        //    List<string> items = new List<string>(fileNames.Length);
+        //    foreach (var file in fileNames)
+        //    {
+        //        items.Add(file.Name);
+        //    }
+        //    return View(items);
+        //}
+        //public FileResult Download(string ImageName)
+        //{
+        //    var FileVirtualPath = "~/docs/" + ImageName;
+        //    return File(FileVirtualPath, "application/force-download", Path.GetFileName(FileVirtualPath));
+        //}
+
+        //public ActionResult Delete(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return RedirectToAction("Registration");
+        //    }
+        //     Doc doc = DE.Docs.Find(id);
+        //    if ( id == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    return View();
+        //}
+        //// POST: PersonalDetails/Delete/5
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult DeleteConfirmed(int id)
+        //{
+        //    Doc doc = DE.Docs.Find(id);
+        //    doc.id.deleteobj(id);
+        //    DE.SaveChanges();
+        //    return RedirectToAction("Index");
+        //}
+
+
+
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(Tbl_User user)
+        {
+            if (ModelState.IsValid)
+            {
+                using (drapEntities db = new drapEntities())
+                {
+
+                    var obj = db.Tbl_User.Where(a => a.email.Equals(user.email) && a.password.Equals(user.password) && a.division.Equals(user.division)).FirstOrDefault();
+                    if (obj != null)
+                    {
+                        //string username = obj.Name;
+                        //int id = obj[0].id;
+                        //Session["ID"] = id;
+                        Session["Name"] = user.name;
+                        Session["division"] = user.division;
+                       // return RedirectToAction("pcv", "Home");
+                       
+                    }
+                    if (user.division == "Registration")
+                    {
+                        return RedirectToAction("Registration", "Home");
+                    }
+                    else
+                    {
+                        TempData["Error"] = "Invalid Name or Password";
+                        ViewBag.Error = TempData["Error"];
+                        return RedirectToAction("Login", "Home");
+                        //ModelState.AddModelError("","User Name or Password is Incorrect");
+                    }
+                }
+            }
+            return RedirectToAction("Login", "User");
+            //return View(user);
+        }
+
+
+
+
+        public ActionResult About()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public object[] id { get; set; }
+    }
+}

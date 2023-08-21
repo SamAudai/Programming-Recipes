@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Programming_Recipes.Models.Language>
+
+@{
+    ViewBag.Title = "قائمة لغات البرمجة";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>قائمة لغات البرمجة</h2>
+
+<p>
+    @Html.ActionLink("إضافة لغة جديدة", "Create")
+</p>
+<table class="table table-stripped table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LanguageName)
+        </th>
+  
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LanguageName)
+        </td>
+        <td>
+            @Html.ActionLink("تعديل", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("تفاصيل", "Details", new { id=item.Id }) |
+            @Html.ActionLink("حذف", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+

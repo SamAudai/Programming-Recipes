@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Programming_Recipes.Models.Recipe>
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+    <div class="panel panel-default" style="padding:15px">
+        <h1 class="panel panel-heading">نتائج البحث</h1>
+        
+        <div class="row">
+            @foreach (var subItem in Model)
+            {
+
+                <div style="margin-left:20px;margin-bottom:30px">
+
+                    <h2 class="panel-heading">@Html.DisplayFor(modelItem => subItem.RecipeTitle)</h2>
+                    <p>
+                        <h2>@Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => subItem.RecipeContent).ToString()))</h2>
+                    </p>
+                    <p>@Html.ActionLink("التفاصيل", "Details", new { RecipeId = subItem.Id }, new { @class = "btn btn-primary" })</p>
+                </div>
+
+            }
+        </div>
+    </div>
+
+

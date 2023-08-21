@@ -1,0 +1,27 @@
+﻿@model Programming_Recipes.Models.Language
+
+@{
+    ViewBag.Title = "لغة البرمجة";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>لغة البرمجة</h2>
+
+<div>
+    <h4>تفاصيل اللغة</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LanguageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LanguageName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("العودة الى قائمة اللغات", "Index")
+</p>
